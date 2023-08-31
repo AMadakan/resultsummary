@@ -1,0 +1,190 @@
+* {
+    border-radius: 30px;
+    font-family: myfont;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@keyframes chameleon {
+    from {
+        background-color: rgb(87, 212, 203);
+    }
+    to {
+        background-color: rgba(120, 166, 239, 0.985);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+        /* display: block; */
+        /* margin-bottom: 20px; */
+    }
+}
+
+body {
+    display: flex;
+    /* width: 300px; */
+    /* height: 400px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.cards {
+    display: flex;
+    /* z-index: -50px; */
+    /* width: 375px; */
+    /* height: 400px; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.cards>div {
+    height: 500px;
+    width: 375px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(45, 14, 14, 0.2);
+    margin-right: -25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation-name: chameleon;
+    animation-duration: 5s;
+    background-image: linear-gradient(to top left, #332de9, #615f9e);
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(237, 227, 227, 0.2);
+    /* padding-left: 20px; */
+    /* padding-right: 25px; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 p {
+    color: rgb(216, 195, 239);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.card2>div {
+    display: flex;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+    word-spacing: 100px;
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: #303b59;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 15px 120px;
+}
+
+button a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: large;
+}
+
+button a:hover {
+    opacity: 0.2;
+}
+
+span {
+    color: slategrey;
+}
+
+#topic {
+    color: rgb(216, 195, 239);
+    padding-top: 10px;
+}
+
+#circle {
+    background-image: linear-gradient(to bottom left, #332de9, #615f9e);
+    animation-name: chameleon;
+    animation-duration: 5s;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+#score {
+    padding-top: 35px;
+}
+
+#summary {
+    font-size: x-large;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    margin-left: 20px;
+    float: left;
+}
+
+#reaction {
+    color: #e16d69;
+    background-color: #fff6f6;
+    word-spacing: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#memory {
+    color: #eeb350;
+    background-color: #fffbf2;
+    word-spacing: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#verbal {
+    color: #2aa888;
+    background-color: #f3fafa;
+    word-spacing: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#visual {
+    color: #3138b1;
+    background-color: #f3f3fd;
+    word-spacing: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
